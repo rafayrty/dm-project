@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discrete Mathematics Chatbot</title>
+    <meta name="theme-color" content="#F06C00">
+
+    <style>
+        *{
+            font-family: sans-serif;
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        body{
+            overflow: hidden;
+        }
+        .container{
+            max-width:80%;
+            margin:0 auto;
+            width:100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding-top:2rem;
+        }
+        h1{
+            padding-bottom:1.5rem;
+            text-align: center;
+        }
+      
+        .dialogflow-chat{
+            height:80vh;
+            width:40vw;
+            border:none;
+            border:3px solid #F06C00;
+        }
+        a{
+            color:#F06C00;
+        }
+        .top-links{
+            display:flex;
+            padding-bottom:.6rem;
+        }
+        #what{
+            margin-left:1rem;
+        }
+        @media only screen and (max-width:800px){
+            .container{
+                max-width:100%;
+                padding-top:0rem;
+            }
+            a{
+                display: none;
+            }
+            h1{
+                display:none;
+            }
+            .chatbot-container{
+                width:100%;
+            }
+            .dialogflow-chat{
+                height:100vh;
+                width:100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+
+
+
+    <div class="container">
+
+        <div class="top-links">
+            <a href="#">About</a>
+            <a href="https://i.ibb.co/R7NpMPM/Screenshot-2022-05-29-at-7-59-32-PM.png" id="what">What Can I Do?</a>
+        </div>
+     
+        <h1>Discrete Mathematics Chat Bot</h1>
+
+        <div class="chatbot-container">
+            <iframe
+            allow="microphone;"
+            class="dialogflow-chat"
+            src="https://console.dialogflow.com/api-client/demo/embedded/77cc8841-99ff-41a9-ae24-96e92468d3ea">
+            </iframe>
+              
+        </div>
+  
+    </div>
+
+</body>
+<script>
+    document.querySelector('a').addEventListener('click',()=>{
+        alert("Developed By Abdul Rafay,Farah Jahngir,Jalal Khan,Eman Asad,Suleiman Zahooor")
+    })
+</script>
+</html>
